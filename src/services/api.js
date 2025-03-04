@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-const BASE_URL = 'https://api.themoviedb.org/3';
+const BASE_URL = "https://api.themoviedb.org/3";
 
 const fetchData = async (endpoint, params = {}) => {
   try {
@@ -16,8 +16,9 @@ const fetchData = async (endpoint, params = {}) => {
   }
 };
 
+// Запити до API
 export const fetchTrendingMovies = async () => {
-  const data = await fetchData('/trending/movie/day');
+  const data = await fetchData("/trending/movie/day");
   return data?.results || [];
 };
 
@@ -37,6 +38,6 @@ export const fetchMovieReviews = async (movieId) => {
 
 export const fetchMoviesByQuery = async (query) => {
   console.log(`📡 Fetching movies for query: "${query}"`);
-  const data = await fetchData('/search/movie', { query });
+  const data = await fetchData("/search/movie", { query });
   return data?.results || [];
 };

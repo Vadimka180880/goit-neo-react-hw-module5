@@ -1,0 +1,22 @@
+.reviewsList {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .reviewsItem {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reviewsItem strong {
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .reviewsItem p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { fetchMovieCast } from '../../services/api';
-import styles from './MovieCast.module.css';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { fetchMovieCast } from "../../services/api";
+import styles from "./MovieCast.module.css";
 
 const placeholderImage = "https://via.placeholder.com/150?text=No+Image";
 
@@ -15,12 +15,13 @@ const MovieCast = () => {
 
   return (
     <ul className={styles.castGrid}>
-      {cast.map(actor => (
+      {cast.map((actor) => (
         <li key={actor.id} className={styles.castItem}>
           <img
-            src={actor.profile_path 
-              ? `https://image.tmdb.org/t/p/w200${actor.profile_path}`
-              : placeholderImage
+            src={
+              actor.profile_path
+                ? `https://image.tmdb.org/t/p/w200${actor.profile_path}`
+                : placeholderImage
             }
             alt={actor.name}
           />

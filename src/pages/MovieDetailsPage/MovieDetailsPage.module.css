@@ -1,0 +1,83 @@
+.movieDetailsContainer {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .goBackButton {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .goBackButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .movieDetails {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .moviePoster {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movieInfo {
+    max-width: 600px;
+  }
+  
+  .movieInfo h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .movieInfo p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .additionalInfo {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .additionalInfo li {
+    margin-bottom: 10px;
+  }
+  
+  .additionalInfo a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .additionalInfo a:hover {
+    color: #0056b3;
+  }
+  
+  .goHomeButton {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .goHomeButton:hover {
+    background-color: #a71d2a;
+  }
+  
